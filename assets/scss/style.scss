@@ -1,0 +1,17 @@
+@import
+    './vendors/normalize',
+    './abstracts/variables',
+    './abstracts/media',
+    './base/globals';
+
+@import
+    './layout/header',
+    './layout/hero',
+    './layout/statistic',
+    './layout/investment',
+    './layout/project',
+    './layout/video',
+    './layout/comfort',
+    './layout/program',
+    './layout/policy',
+    './layout/footer';
