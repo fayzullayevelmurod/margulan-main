@@ -123,22 +123,17 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .section_title {
+  font-family: $font-Onest;
   font-weight: 400;
   font-size: 67rem;
-  line-height: 121%;
+  line-height: 80.95px;
+  letter-spacing: -3%;
   text-transform: uppercase;
   color: $color-white;
 
-  span {
-    display: inline;
-    background: linear-gradient(90deg, #f00 0%, #c70a0a 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
   @include media('md') {
-    font-size: 26rem;
+    font-size: 32rem;
+    line-height: 100%;
   }
 }
 

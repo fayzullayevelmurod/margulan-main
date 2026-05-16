@@ -444,22 +444,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .section_title {
+  font-family: "Onest", sans-serif;
   font-weight: 400;
   font-size: 67rem;
-  line-height: 121%;
+  line-height: 80.95px;
+  letter-spacing: -3%;
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.section_title span {
-  display: inline;
-  background: linear-gradient(90deg, #f00 0%, #c70a0a 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 @media (max-width: 850px) {
   .section_title {
-    font-size: 26rem;
+    font-size: 32rem;
+    line-height: 100%;
   }
 }
 
@@ -1483,6 +1479,54 @@ p, h1, h2, h3, h4, h5, h6 {
 .program .btn-red svg {
   width: 34rem;
   height: 34rem;
+}
+
+.path {
+  max-width: 1890rem;
+  margin: 348rem auto 0 auto;
+  border-radius: 65rem;
+  background: #e6e6e6;
+  padding: 60rem 0 70rem 0;
+  position: relative;
+}
+.path_icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 457rem;
+  height: 416rem;
+  border-radius: 0 0 65rem 0;
+}
+.path .container {
+  position: relative;
+}
+.path_text {
+  max-width: 784rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 32rem;
+}
+.path_text .section_title {
+  color: #000000;
+}
+.path_text p {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 26rem;
+  line-height: 120%;
+  letter-spacing: -3%;
+  color: #000000;
+}
+.path_text p span {
+  color: #FF0000;
+}
+.path_img {
+  position: absolute;
+  right: -60rem;
+  bottom: -70rem;
+  width: 1000rem;
+  height: 991rem;
 }
 
 .policy {

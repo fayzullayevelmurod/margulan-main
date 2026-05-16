@@ -1,0 +1,56 @@
+// path
+.path {
+  max-width: 1890rem;
+  margin: 348rem auto 0 auto;
+  border-radius: 65rem;
+  background: $color-white-eb;
+  padding: 60rem 0 70rem 0;
+  position: relative;
+
+  &_icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 457rem;
+    height: 416rem;
+    border-radius: 0 0 65rem 0;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &_text {
+    max-width: 784rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 32rem;
+
+    .section_title {
+      color: $color-black;
+    }
+
+    p {
+      font-family: $font-Onest;
+      font-weight: 400;
+      font-size: 26rem;
+      line-height: 120%;
+      letter-spacing: -3%;
+      color: $color-black;
+
+      span {
+        color: $color-red;
+      }
+    }
+  }
+
+  &_img {
+    position: absolute;
+    right: -60rem;
+    bottom: -70rem;
+    width: 1000rem;
+    height: 991rem;
+  }
+}
+// path
