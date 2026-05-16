@@ -7,6 +7,13 @@
   padding: 60rem 0 70rem 0;
   position: relative;
 
+  @include media('md') {
+    margin: 60rem 5rem;
+    border-radius: 32rem;
+    overflow: hidden;
+    padding: 0;
+  }
+
   &_icon {
     position: absolute;
     right: 0;
@@ -14,6 +21,11 @@
     width: 457rem;
     height: 416rem;
     border-radius: 0 0 65rem 0;
+
+    @include media('md') {
+      width: 317rem;
+      height: 280rem;
+    }
   }
 
   .container {
@@ -27,8 +39,21 @@
     flex-direction: column;
     gap: 32rem;
 
+    @include media('md') {
+      padding: 32rem 0 500rem 0;
+      gap: 24rem;
+      align-items: center;
+    }
+
     .section_title {
       color: $color-black;
+
+      @include media('md') {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
     }
 
     p {
@@ -39,9 +64,26 @@
       letter-spacing: -3%;
       color: $color-black;
 
+      @include media('md') {
+        font-size: 18rem;
+      }
+
       span {
         color: $color-red;
       }
+    }
+  }
+
+  .btn-red {
+    @include media('md') {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 50rem;
+      margin: auto;
+      z-index: 2;
+      width: calc(100% - 30rem);
+      font-size: 22rem;
     }
   }
 
@@ -51,6 +93,15 @@
     bottom: -70rem;
     width: 1000rem;
     height: 991rem;
+
+    @include media('md') {
+      right: auto;
+      left: -70rem;
+      bottom: -30rem;
+      min-width: 560rem;
+      height: 544rem;
+      object-fit: contain;
+    }
   }
 }
 // path

@@ -455,7 +455,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 850px) {
   .section_title {
     font-size: 32rem;
-    line-height: 100%;
+    line-height: 120%;
   }
 }
 
@@ -1167,6 +1167,14 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 60rem 0 70rem 0;
   position: relative;
 }
+@media (max-width: 850px) {
+  .path {
+    margin: 60rem 5rem;
+    border-radius: 32rem;
+    overflow: hidden;
+    padding: 0;
+  }
+}
 .path_icon {
   position: absolute;
   right: 0;
@@ -1174,6 +1182,12 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 457rem;
   height: 416rem;
   border-radius: 0 0 65rem 0;
+}
+@media (max-width: 850px) {
+  .path_icon {
+    width: 317rem;
+    height: 280rem;
+  }
 }
 .path .container {
   position: relative;
@@ -1185,8 +1199,23 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   gap: 32rem;
 }
+@media (max-width: 850px) {
+  .path_text {
+    padding: 32rem 0 500rem 0;
+    gap: 24rem;
+    align-items: center;
+  }
+}
 .path_text .section_title {
   color: #000000;
+}
+@media (max-width: 850px) {
+  .path_text .section_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .path_text p {
   font-family: "Onest", sans-serif;
@@ -1196,8 +1225,25 @@ p, h1, h2, h3, h4, h5, h6 {
   letter-spacing: -3%;
   color: #000000;
 }
+@media (max-width: 850px) {
+  .path_text p {
+    font-size: 18rem;
+  }
+}
 .path_text p span {
   color: #FF0000;
+}
+@media (max-width: 850px) {
+  .path .btn-red {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50rem;
+    margin: auto;
+    z-index: 2;
+    width: calc(100% - 30rem);
+    font-size: 22rem;
+  }
 }
 .path_img {
   position: absolute;
@@ -1205,6 +1251,17 @@ p, h1, h2, h3, h4, h5, h6 {
   bottom: -70rem;
   width: 1000rem;
   height: 991rem;
+}
+@media (max-width: 850px) {
+  .path_img {
+    right: auto;
+    left: -70rem;
+    bottom: -30rem;
+    min-width: 560rem;
+    height: 544rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 .policy {
