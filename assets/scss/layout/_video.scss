@@ -1,27 +1,49 @@
 // video
 .video {
+
+  &_head {
+    margin-bottom: 60rem;
+
+    @include media('md') {
+      margin-bottom: 32rem;
+    }
+
+    p {
+      max-width: 1090rem;
+      font-family: $font-Inter;
+      font-weight: 400;
+      font-size: 24rem;
+      line-height: 42rem;
+      color: $color-white-90;
+      margin-top: 20rem;
+
+      @include media('md') {
+        font-size: 20rem;
+        line-height: 120%;
+      }
+    }
+  }
   &_cards {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 70rem;
+    gap: 20rem;
 
     @include media('md') {
       grid-template-columns: repeat(1,1fr);
-      gap: 32rem;
     }
   }
 
   &_card {
-    border-radius: 20rem;
+    border-radius: 32rem;
     border: 1rem solid $color-red;
     overflow: hidden;
 
     &-img {
-      height: 330rem;
+      height: 300rem;
       position: relative;
 
       @include media('sm') {
-        height: 250rem;
+        height: 200rem;
       }
 
       &::before {
@@ -39,18 +61,28 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 60rem;
-        height: 60rem;
+        width: 100rem;
+        height: 100rem;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         background: linear-gradient(90deg, #FF0000 0%, #EB2323 100%);
 
+        @include media('md') {
+          width: 60rem;
+          height: 60rem;
+        }
+
         img {
-          width: 36rem;
-          height: 36rem;
+          width: 40rem;
+          height: 40rem;
           object-fit: contain;
+
+          @include media('md') {
+            width: 30rem;
+            height: 30rem;
+          }
         }
       }
 
@@ -62,7 +94,7 @@
     }
 
     &-text {
-      padding: 20rem 32rem 40rem 32rem;
+      padding: 16rem 20rem;
 
       @include media('md') {
         padding: 20rem 8rem;
@@ -71,14 +103,15 @@
       h3 {
         font-family: $font-Onest;
         font-weight: 700;
-        font-size: 28rem;
+        font-size: 32rem;
         background: linear-gradient(90deg, #f00 0%, #eb2323 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
 
         @include media('md') {
-          font-size: 24rem;
+          font-size: 22rem;
         }
       }
 
@@ -86,15 +119,61 @@
         font-family: $font-Inter;
         font-weight: 300;
         font-size: 20rem;
-        color: $color-white-eb;
+        color: $color-white;
         margin: 22rem 0 40rem 0;
+
+        @include media('md') {
+          font-size: 18rem;
+          margin: 12rem 0 32rem 0;
+        }
+      }
+
+      h4 {
+        font-family: $font-Onest;
+        font-weight: 600;
+        font-size: 26rem;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $color-white;
+
+        @include media('md') {
+          font-size: 22rem;
+        }
+      }
+
+      span {
+        font-family: $font-Inter;
+        font-weight: 400;
+        font-size: 22rem;
+        line-height: 30rem;
+        color: $color-white;
+        display: block;
+        margin: 16rem 0 54rem 0;
+
+        @include media('md') {
+          font-size: 20rem;
+          margin: 10rem 0 32rem 0;
+        }
       }
 
       .btn-red {
-        width: 100%;
-        height: 60rem;
-        font-size: 24rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        font-family: $font-Gilroy;
+        font-weight: 600;
+        width: 320rem;
+        height: 50rem;
+        font-size: 22rem;
+        text-transform: none;
         padding: 10rem;
+        border-radius: 100rem;
+
+        @include media('md') {
+          width: 100%;
+          height: 50rem;
+        }
       }
     }
   }
