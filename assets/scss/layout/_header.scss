@@ -88,4 +88,62 @@
       justify-content: center;
     }
   }
+
+  &_index {
+    position: absolute;
+    z-index: 2;
+    top: 24rem;
+    height: 33rem;
+    width: 100%;
+
+    &_link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+
+      @include media('md') {
+        gap: 20rem;
+      }
+
+      .end_link {
+        @include media('md') {
+          display: none;
+        }
+      }
+
+      a {
+        width: 190rem;
+        font-family: $font-Inter;
+        font-weight: 400;
+        font-size: 18rem;
+        line-height: 100%;
+        letter-spacing: -4%;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-white;
+        padding: 12rem 24rem;
+        border-radius: 100rem;
+        border: 1.5rem solid #EDEBEB;
+        transition: .3s ease;
+
+        @include media('md') {
+          width: 125rem;
+          height: 33rem;
+          font-size: 14rem;
+          padding: 8rem;
+        }
+
+        &.active {
+          background: $color-white;
+          color: $color-black;
+        }
+
+        &:hover {
+          background: $color-white;
+          color: $color-black;
+        }
+      }
+    }
+  }
 }
