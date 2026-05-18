@@ -2,8 +2,26 @@
 .course {
   padding-top: 200rem;
 
+  @include media('md') {
+    padding-top: 0;
+  }
+
   .section_title {
     margin-bottom: 80rem;
+
+    @include media('md') {
+      text-align: center;
+      margin-bottom: 32rem;
+    }
+  }
+
+  &_in {
+    position: relative;
+    margin-bottom: 100rem;
+
+    @include media('md') {
+      margin-bottom: 335rem;
+    }
   }
 
   &_text {
@@ -11,6 +29,10 @@
     flex-direction: column;
     gap: 60rem;
     max-width: 600rem;
+
+    @include media('md') {
+      gap: 40rem;
+    }
 
     &_block {
       display: flex;
@@ -22,15 +44,25 @@
         height: 78rem;
         display: flex;
         flex-shrink: 0;
+
+        @include media('md') {
+          width: 36rem;
+          height: 36rem;
+        }
       }
 
       h3 {
+        font-family: $font-Onest;
         margin-bottom: 12rem;
         font-weight: 700;
         font-size: 32rem;
         line-height: 100%;
         text-transform: uppercase;
         color: $color-white;
+
+        @include media('md') {
+          font-size: 22rem;
+        }
       }
 
       p {
@@ -39,6 +71,137 @@
         font-size: 24rem;
         line-height: 120%;
         color: $color-white;
+
+        @include media('md') {
+          font-size: 18rem;
+        }
+      }
+    }
+  }
+
+  &_img {
+    position: absolute;
+    top: -150rem;
+    right: -95rem;
+    width: 1150rem;
+
+    @include media('md') {
+      top: auto;
+      left: 35%;
+      right: auto;
+      bottom: -540rem;
+      min-width: 500rem;
+      width: 500rem;
+      transform: translateX(-50%);
+    }
+  }
+
+  &_form {
+    border-radius: 65rem;
+    background: $color-white;
+    padding: 45rem 50rem;
+    position: relative;
+
+    @include media('md') {
+      padding: 28rem 16rem 174rem 16rem;
+      overflow: hidden;
+    }
+
+    .course_icon {
+      position: absolute;
+      bottom: -100rem;
+      right: -140rem;
+      width: 555rem;
+      height: 555rem;
+      transform: rotate(-10deg);
+
+      @include media('md') {
+        width: 328rem;
+        height: 328rem;
+        transform: rotate(-4deg);
+        right: -16rem;
+        bottom: -154rem;
+      }
+    }
+
+    .section_title {
+      max-width: 945rem;
+      color: $color-black;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-family: $font-Inter;
+      font-weight: 300;
+      font-size: 32rem;
+      line-height: 100%;
+      letter-spacing: -6%;
+      color: #595959;
+      margin: 20rem 0 60rem 0;
+
+      @include media('md') {
+        font-size: 20rem;
+        line-height: 120%;
+        margin: 20rem 0 32rem 0;
+        text-align: center;
+      }
+    }
+
+    span {
+      font-family: $font-Inter;
+      font-weight: 200;
+      font-size: 20rem;
+      line-height: 100%;
+      color: #3B3B3B;
+      max-width: 450rem;
+
+      @include media('md') {
+        font-size: 14rem;
+        text-align: center;
+        max-width: 300rem;
+        margin: auto;
+        display: block;
+      }
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 24rem;
+      max-width: 1300rem;
+      margin-bottom: 30rem;
+
+      @include media('md') {
+        grid-template-columns: repeat(1,1fr);
+        gap: 12rem;
+      }
+
+      input,
+      button {
+        height: 80rem;
+        border-radius: 100rem;
+
+        @include media('md') {
+          height: 60rem;
+        }
+      }
+
+      input {
+        font-weight: 200;
+        font-size: 20rem;
+        line-height: 100%;
+        color: $color-white;
+        padding: 10rem 18rem;
+        background: #18171CA3;
+        border: 1rem solid #77777733;
+
+        @include media('md') {
+          font-size: 16rem;
+        }
+
+        &::placeholder {
+          color: $color-white;
+        }
       }
     }
   }
